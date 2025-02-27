@@ -1,4 +1,5 @@
 import { RevealOnScroll } from "../RevealOnScroll";
+import resumeFile from "./Samo Susa - CV.pdf";
 
 export const Home = () => {
   return (
@@ -37,10 +38,8 @@ export const Home = () => {
       </RevealOnScroll>
       <div className="flex justify-center mt-8">
         <a
-          href={`${import.meta.env.BASE_URL}Samo%20Susa%20-%20CV.pdf`}
+          href={resumeFile}
           download="Samo Susa - CV.pdf"
-          target="_blank"
-          rel="noopener noreferrer"
           className="bg-blue-500 text-white py-3 px-6 rounded font-medium transition relative overflow-hidden hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59, 130, 246, 0.4)]"
         >
           Check out my resume!
