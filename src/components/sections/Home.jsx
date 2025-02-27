@@ -1,10 +1,11 @@
 import { RevealOnScroll } from "../RevealOnScroll";
+import resumePDF from "./Samo Susa - CV.pdf";
 
 export const Home = () => {
   return (
     <section
       id="home"
-      className="min-h-screen flex items-center justify-center relative"
+      className="min-h-screen flex flex-col items-center justify-center relative"
     >
       <RevealOnScroll>
         <div className="text-center z-10 px-4">
@@ -32,17 +33,18 @@ export const Home = () => {
             >
               Contact Me
             </a>
-
-            <a
-              href="/src/assets/Samo Susa - CV.pdf"
-              download
-              className="bg-blue-500 text-white py-3 px-6 rounded font-medium transition relative overflow-hidden hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59, 130, 246, 0.4)]"
-            >
-              Check my resume!
-            </a>
           </div>
         </div>
       </RevealOnScroll>
+      <div className="flex justify-center mt-8">
+        <a
+          href={resumePDF}
+          download="Samo Susa - CV.pdf"
+          className="bg-blue-500 text-white py-3 px-6 rounded font-medium transition relative overflow-hidden hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59, 130, 246, 0.4)]"
+        >
+          Check out my resume!
+        </a>
+      </div>
     </section>
   );
 };
